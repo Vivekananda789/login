@@ -1,0 +1,25 @@
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <br>
+  <label for="password" id="view-password" onClick="viewPassword()">
+    <input type="checkbox" id="password-checkbox" >View Password
+  </label>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function viewPassword() {
+  var passwordInput = document.getElementById("password");
+  var passwordCheckbox = document.getElementById("password-checkbox");
+  if (passwordCheckbox.checked) {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
+</script>

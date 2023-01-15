@@ -1,0 +1,34 @@
+<div id="loading" style="display: flex; justify-content: center; align-items: center; background-color: red;">
+    <img src="loading.gif" alt="Loading...">
+</div>
+
+<div id="content" style="display: none;">
+    <p>Vivek HTML code</p>
+    <button id="github" style="background-color: blue; color: white;">Github</button>
+    <button id="youtube" style="background-color: red; color: white;">Youtube</button>
+    <button id="telegram" style="background-color: green; color: white;">Telegram</button>
+    <button id="instagram" style="background-color: purple; color: white;">Instagram</button>
+</div>
+
+<script>
+    setTimeout(function() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 5000);
+
+    document.getElementById("github").addEventListener("click", function() {
+        window.open("https://github.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    });
+
+    document.getElementById("youtube").addEventListener("click", function() {
+        window.open("https://youtube.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    });
+
+    document.getElementById("telegram").addEventListener("click", function() {
+        window.open("https://telegram.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    });
+
+    document.getElementById("instagram").addEventListener("click", function() {
+        window.open("https://instagram.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    });
+</script>
